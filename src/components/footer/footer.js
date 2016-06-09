@@ -44,7 +44,7 @@ const Footer = ({
 Footer.propTypes = {
   completed: PropTypes.number,
   active: PropTypes.number,
-  onClearCompleted: PropTypes.function,
+  onClearCompleted: PropTypes.func,
 };
 
 export default Footer;

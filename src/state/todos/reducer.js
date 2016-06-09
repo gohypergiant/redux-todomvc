@@ -27,7 +27,7 @@ const todos = handleActions({
     state
       .map(t => // eslint-disable-line
         t.id === payload.id ?
-        Object.assing({}, t, { text: payload.text }) :
+        Object.assign({}, t, { text: payload.text }) :
         t
       ),
 

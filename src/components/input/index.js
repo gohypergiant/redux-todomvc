@@ -41,7 +41,7 @@ class Input extends Component {
         autoFocus
         value={this.state.text}
         className={classnames({
-          edit: this.props.editing,
+          edit: this.props.isActive,
           'new-todo': this.props.resetOnSave,
         })}
         placeholder={this.props.placeholder}
