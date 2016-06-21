@@ -53,4 +53,13 @@ class Input extends Component {
   }
 }
 
+Input.propTypes = {
+  isActive: PropTypes.bool,
+  resetOnSave: PropTypes.bool,
+  saveOnBlur: PropTypes.bool,
+  onSave: PropTypes.func,
+  text: PropTypes.string,
+  placeholder: PropTypes.string,
+};
+
 export default Input;

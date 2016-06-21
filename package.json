@@ -1,10 +1,9 @@
 {
   "name": "bpxl-redux-todomvc",
   "version": "1.0.0",
-  "description": "Todomvc redux example.",
-  "main": "index.js",
-  "scripts": {
-  },
+  "description": "Black Pixel Todomvc redux example.",
+  "main": "server.js",
+  "scripts": {},
   "author": "Black Pixel",
   "license": "MIT",
   "devDependencies": {
@@ -25,6 +24,7 @@
     "classnames": "^2.2.5",
     "express": "^4.13.4",
     "immutable": "^3.8.1",
+    "lodash.now": "^4.0.0",
     "react": "^15.1.0",
     "react-dom": "^15.1.0",
     "react-redux": "^4.4.5",

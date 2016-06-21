@@ -11,9 +11,9 @@ const FilterContainer = connect(
       filter,
       title,
     }),
-    (activeFilter, props) => ({
-      title: props.title,
-      active: props.filter === activeFilter,
+    (activeFilter, { filter, title }) => ({
+      title,
+      active: filter === activeFilter,
     })
   ),
   (dispatch, { filter }) => ({

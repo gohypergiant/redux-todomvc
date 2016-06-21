@@ -1,5 +1,6 @@
 import { handleActions } from 'redux-actions';
 import Immutable from 'immutable';
+import now from 'lodash.now';
 
 import {
   TODOS_ADD,
@@ -13,13 +14,13 @@ import {
 const initialState = Immutable.List([{ // eslint-disable-line
   text: 'Use Redux',
   completed: false,
-  id: 1,
+  id: now(),
 }]);
 
 const todos = handleActions({
   [TODOS_ADD]: (state, { payload }) =>
     state.push(Object.assign({}, payload, {
-      id: Math.random(),
+      id: now(),
       completed: false,
     })),
 

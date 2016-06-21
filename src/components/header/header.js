@@ -11,4 +11,8 @@ const Header = ({ onSave }) =>
     />
   </header>;
 
+Header.propTypes = {
+  onSave: PropTypes.func,
+};
+
 export default Header;

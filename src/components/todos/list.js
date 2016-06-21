@@ -26,6 +26,8 @@ const TodosList = ({
   </section>;
 
 TodosList.propTypes = {
+  active: PropTypes.number,
+  onCompleteAll: PropTypes.func,
   todos: PropTypes.object,
 };
 

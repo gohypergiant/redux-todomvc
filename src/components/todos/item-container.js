@@ -1,5 +1,6 @@
 import { connect } from 'react-redux';
 import { createSelector } from 'reselect';
+import { getActiveTodo } from '../../state/todo-active/selectors';
 import Item from './item';
 
 import {
@@ -12,10 +13,6 @@ import {
   setActiveTodo,
   removeActiveTodo,
 } from '../../state/todo-active/actions';
-
-import {
-  getActiveTodo,
-} from '../../state/todo-active/selectors';
 
 const ItemContainer = connect(
   createSelector(

@@ -1,22 +1,9 @@
 import { connect } from 'react-redux';
-import { createSelector } from 'reselect';
-import Header from './header';
 import { addTodo } from '../../state/todos/actions';
-
-import {
-  getActiveCount,
-  getCompletedCount,
-} from '../../state/todos/selectors';
+import Header from './header';
 
 const HeaderContainer = connect(
-  createSelector(
-    getCompletedCount,
-    getActiveCount,
-    (completed, active) => ({
-      completed,
-      active,
-    })
-  ),
+  null,
   dispatch => ({
     onSave(text) {
       if (text.length > 0) {

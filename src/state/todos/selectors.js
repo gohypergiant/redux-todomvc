@@ -1,4 +1,6 @@
 import { createSelector } from 'reselect';
+import { getVisibilityFilter } from '../visibility-filter/selectors';
+
 
 import {
   SHOW_ALL,
@@ -6,13 +8,14 @@ import {
   SHOW_COMPLETED,
 } from '../visibility-filter/constants';
 
-import {
-  getVisibilityFilter,
-} from '../visibility-filter/selectors';
-
 export const getAllTodos = createSelector(
   state => state.todos,
   todos => todos
+);
+
+export const getAllCount = createSelector(
+  getAllTodos,
+  todos => todos.count()
 );
 
 export const getCompletedCount = createSelector(
@@ -21,9 +24,9 @@ export const getCompletedCount = createSelector(
 );
 
 export const getActiveCount = createSelector(
-  getAllTodos,
+  getAllCount,
   getCompletedCount,
-  (todos, completed) => todos.count() - completed
+  (todos, completed) => todos - completed
 );
 
 export const getVisibleTodos = createSelector(

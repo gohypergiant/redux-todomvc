@@ -31,11 +31,7 @@ const Item = ({
           checked={todo.completed}
           onChange={completeTodo}
         />
-        <label
-          onDoubleClick={editTodo}
-        >
-          {todo.text}
-        </label>
+        <label onDoubleClick={editTodo}>{todo.text}</label>
         <button
           className="destroy"
           onClick={deleteTodo}
@@ -46,6 +42,11 @@ const Item = ({
 
 Item.propTypes = {
   todo: PropTypes.object,
+  isActive: PropTypes.bool,
+  editTodo: PropTypes.func,
+  completeTodo: PropTypes.func,
+  updateTodo: PropTypes.func,
+  deleteTodo: PropTypes.func,
 };
 
 export default Item;

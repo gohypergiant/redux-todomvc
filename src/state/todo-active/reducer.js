@@ -1,13 +1,10 @@
 import { handleActions } from 'redux-actions';
+import { TODOS_EDIT } from '../todos/actions';
 
 import {
   TODO_ACTIVE_SET,
   TODO_ACTIVE_REMOVE,
 } from '../action-types';
-
-import {
-  TODOS_EDIT,
-} from '../todos/actions';
 
 const todoActive = handleActions({
   [TODO_ACTIVE_SET]: (state, { payload }) => payload,

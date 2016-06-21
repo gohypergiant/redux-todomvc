@@ -1,15 +1,12 @@
 import { connect } from 'react-redux';
 import { createSelector } from 'reselect';
+import { clearCompleteTodos } from '../../state/todos/actions';
 import Footer from './footer';
 
 import {
   getActiveCount,
   getCompletedCount,
 } from '../../state/todos/selectors';
-
-import {
-  clearCompleteTodos,
-} from '../../state/todos/actions';
 
 const FooterContainer = connect(
   createSelector(
