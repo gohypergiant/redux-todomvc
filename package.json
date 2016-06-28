@@ -3,7 +3,17 @@
   "version": "1.0.0",
   "description": "Black Pixel Todomvc redux example.",
   "main": "server.js",
-  "scripts": {},
+  "homepage": "https://github.com/bpxl-labs/bpxl-redux-todomvc",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bpxl-labs/bpxl-redux-todomvc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bpxl-labs/bpxl-redux-todomvc/issues"
+  },
+  "engine": {
+    "node": ">=4.0.0"
+  },
   "author": "Black Pixel",
   "license": "MIT",
   "devDependencies": {
