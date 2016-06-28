@@ -5,5 +5,5 @@ This repo serves as an example on how to structure Redux applications in a scala
 ### Running Example
 
 ```
-npm i && node server.js
+$ npm i && node server.js
 ```
