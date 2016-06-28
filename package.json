@@ -1,15 +1,15 @@
 {
-  "name": "bpxl-redux-todomvc",
+  "name": "redux-todomvc",
   "version": "1.0.0",
-  "description": "Black Pixel Todomvc redux example.",
+  "description": "Black Pixel's TodoMVC example based on a scalable Redux architecture.",
   "main": "server.js",
-  "homepage": "https://github.com/bpxl-labs/bpxl-redux-todomvc",
+  "homepage": "https://github.com/bpxl-labs/redux-todomvc",
   "repository": {
     "type": "git",
-    "url": "git://github.com/bpxl-labs/bpxl-redux-todomvc.git"
+    "url": "git://github.com/bpxl-labs/redux-todomvc.git"
   },
   "bugs": {
-    "url": "https://github.com/bpxl-labs/bpxl-redux-todomvc/issues"
+    "url": "https://github.com/bpxl-labs/redux-todomvc/issues"
   },
   "engine": {
     "node": ">=4.0.0"
