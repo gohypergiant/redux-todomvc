@@ -7,3 +7,10 @@ This repo serves as an example on how to structure Redux applications in a scala
 ```
 $ npm i && node server.js
 ```
+
+
+---
+
+Website: [blackpixel.com](https://blackpixel.com) &nbsp;&middot;&nbsp;
+GitHub: [@bpxl-labs](https://github.com/bpxl-labs/) &nbsp;&middot;&nbsp;
+Twitter: [@blackpixel](https://twitter.com/blackpixel)
